@@ -285,10 +285,15 @@ border:1px solid gray;
 .services-info-img{
 	padding-top:5%;
 }
-
+/* media inquiries */
 @media (max-width: 800px){
 	
+ .navA{
+		display:flex;
+		flex-direction:column;
+	
 		
+	}
 		.navContainer {
 			display: flex;
 			width: 80%;
@@ -308,14 +313,13 @@ border:1px solid gray;
 			text-align:center;
 		}
 		
+		
 		.featuresAbout {
 			display:flex;
 			
 			width:80%;
 			flex-direction:column;
-			/* margin-bottom:5%;
-			text-align: left; */
-								
+							
 			}
 			.featuresAbout p{
 				padding: 2%;
@@ -330,10 +334,13 @@ border:1px solid gray;
 			.serviceProductVision p{
 				padding:2%;
 			}
-
+			
 			
 	}
 @media(max-width: 500px){
+	.navContainer{
+		margin: 0 auto;
+	}
 
 
 	.moon{
@@ -351,7 +358,19 @@ border:1px solid gray;
 	.class{
 		text-align:center;
 	}
-	 .a{
-		flex-direction:column-reverse;
+	 .navA,  a{
+		flex-direction:column;
+		/* border-top:1px solid gray;
+		border-bottom:1px solid gray; */
+
+}
+	
+	
+	nav a{
+		
+		border:none;
+		border-top:1px solid gray;
+		border-bottom: 1px solid gray;
+		width:100%;
 	}
 }
